@@ -11,11 +11,11 @@
 source /etc/profile.d/conda.sh
 conda activate mice
 
-wget  http://www.cs.cmu.edu/~glai1/data/race/RACE.tar.gz -O data/RACE.tar.gz
-
+# wget  http://www.cs.cmu.edu/~glai1/data/race/RACE.tar.gz -O data/RACE.tar.gz
+tar -xzvf data/RACE.tar.gz -C data/
 # bash download_models.sh
 # python3 run_stage_two.py -task imdb -stage2_exp mice_binary -editor_path results/imdb/editors/mice/imdb_editor.pth
 # bash run_all.sh
 
 
-conda mice
+conda deactivate
