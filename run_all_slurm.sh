@@ -1,12 +1,13 @@
 #!/bin/bash
 #SBATCH --job-name=exp
+#SBATCH --nodes=1
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:1
-#SBATCH --nodes=1
+#SBATCH --gpus-per-node=rtx_2080_ti:1
+#SBATCH --mem=8G
 #SBATCH --tasks-per-node=1
-#SBATCH --time=7-00:00:00
-#SBATCH --mem=30GB
 #SBATCH --cpus-per-task=30
+#SBATCH --time=7-00:00:00
 #SBATCH --output=exp_output.log
 #SBATCH --error=exp_error.log
 
