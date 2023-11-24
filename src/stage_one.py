@@ -218,13 +218,13 @@ def run_train_editor(predictor, dr, args):
     train_params = {
         'batch_size': args.train.train_batch_size,
         'shuffle': True,
-        'num_workers': 0
+        'num_workers': 30
         }
 
     val_params = {
         'batch_size': args.train.val_batch_size,
         'shuffle': False,
-        'num_workers': 0
+        'num_workers': 30
         }
 
     optim = torch.optim.Adam(params=editor_model.parameters(), \

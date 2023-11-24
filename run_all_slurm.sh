@@ -1,6 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=exp
 #SBATCH --partition=gpu
+#SBATCH --gres=gpu:1
+#SBATCH --nodes=1
+#SBATCH --tasks-per-node=1
 #SBATCH --time=7-00:00:00
 #SBATCH --mem=30GB
 #SBATCH --cpus-per-task=30
