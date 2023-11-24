@@ -2,7 +2,6 @@
 #SBATCH --job-name=exp
 #SBATCH --nodes=1
 #SBATCH --partition=gpu
-#SBATCH --gres=gpu:1
 #SBATCH --gpus-per-node=rtx_2080_ti:1
 #SBATCH --mem=8G
 #SBATCH --tasks-per-node=1
