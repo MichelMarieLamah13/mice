@@ -7,7 +7,7 @@ allennlp==1.2.2
 munch==2.5.0
 tqdm==4.47.0
 overrides==3.1.0
-transformers
+transformers==3.5.0
 more_itertools==8.4.0
 scikit_learn==0.24.2
 wget
