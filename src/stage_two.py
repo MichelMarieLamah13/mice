@@ -1,3 +1,5 @@
+import pdb
+
 from transformers import T5Tokenizer, T5Model, T5Config
 from transformers import T5ForConditionalGeneration, T5TokenizerFast
 from allennlp.predictors import Predictor, TextClassifierPredictor
@@ -74,7 +76,7 @@ def load_editor_weights(editor_model, editor_path):
 
 def load_models(args):
     """ Loads Predictor and Editor by task and other args """
-
+    pdb.set_trace()
     logger.info("Loading models...")
     predictor = load_predictor(args.meta.task)
     editor_tokenizer_wrapper = PretrainedTransformerTokenizer(
